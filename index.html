@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stark-- A E-commerce Company</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+  <header class="p-3 text-bg-light sticky-top py-1 shadow-lg p-3 bg-body-rounded">
+    <div class="container sticky-top py-1">
+      <div class="d-flex flex-wrap sticky-top py-1 align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        
+          <img src="istockphoto-1369630737-612x612.jpg" width="100" height="72" class="rounded-circle">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-secondary" href="index.html">Home</a></li>
+          <li><a href="about.html" class="nav-link px-2 text-brown" target="_blank">About</a></li>
+          <li><a href="features.html" class="nav-link px-2 text-brown" target="_blank">Features</a></li>
+          <li><a href="pricing.html" class="nav-link px-2 text-brown" >Pricing</a></li>
+          <li><a href="error.html" class="nav-link px-2 text-brown" target="_blank">Gallary</a></li>
+          
+        </ul>
+        
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Search..."
+            aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <!-- <button type="button" class="btn btn-outline-light btn-primary me-2" href="error.html">Login</button> -->
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" >Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- <modal> This is the modal used In SignUp</modal> -->
+ <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register & Save 1000 on your first Purchase!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <div class="modal-body">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Asharam" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Khatik" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Username</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault04" class="form-label">State</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Select</option>
+              <option>Rajasthan</option>
+              <option>Taswariya Bansa</option>
+              <option>Phooliya Kalan</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+      
+    </div>
+  </div>
+</div></div>
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1400x500/?construction site" class="d-block img-fluid " alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ready to find your dream home? Let’s get started.</h5>
+          <p>The Baywest experience is about care and craft, from start to finish.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x500/?contruction" class="d-block img-fluid " alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Our Way To Work</h5>
+          <p>Building a new home should be simple, collaborative, and full of joy</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x500/?engineer" class="d-block img-fluid" alt="...">
+        <!-- <img src="https://source.unsplash.com/1100x300/?nature" class="d-block w-100 h-50" alt="..."> -->
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <i class="bi bi-exclamation-diamond"></i>
+
+
+  <hr class="featurette-divider py-lg-5 mx-4">
+  
+  <div class="row featurette mx-4  " dir="rtl">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1 text-center">Global Presence <span class="text-muted"></span></h2>
+      <p class="lead" dir="ltl">A thrust on international business over the years has seen L&T's global footprint growing steadily. We have manufacturing facilities in key geographies, and offices and customers in over 30 countries.</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img src="https://source.unsplash.com/500x500/?engineer" class="bd-placeholder-img rounded shadow-lg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+ 
+  <div class="container d-flex justify-content-between pb-4" id="card">
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://source.unsplash.com/500x500/?construction,home" class="card-img-top" alt="...">
+
+      <div class="card-body">
+
+        <h5 class="card-title">Our Plans</h5>
+        <p class="card-text .text-primary">We want to build your Texas dream home. We have plans for all kinds of homes, so you're sure to find the one that's right for you. With so many options to choose from, you'll be able to find the perfect home for you.
+
+          .</p>
+        <a href="#" class="btn btn-primary">View FloorPlans</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://source.unsplash.com/500x500/?building,structure" class="card-img-top" alt="...">
+
+      <div class="card-body">
+        <h5 class="card-title">Sustainability</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://source.unsplash.com/500x500/?house,construction" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Career</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+        <!-- <video src="pexels-nino-milin-6033941.mp4" width="172" height="133"></video> -->
+
+        <!-- <img src="https://source.unsplash.com/500x500/?bmw" width="70" height="72" class="rounded-circle" &nbsp> -->
+        <span class="fs-4">Welcome to Calgary’s curated home building experience.
+          Let’s build the home you’ll love, and live in, longer.</span>
+      </a>
+    </header>
+
+  
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Award & Recognition</h2>
+          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix
+            and match with additional component themes and more.</p>
+          <button class="btn btn-outline-light" type="button">View more...</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Learning & Development</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+            look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+            content for equal-height.</p>
+          <button class="btn btn-outline-secondary" type="button">View More...</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- this is the blog post -->
+    <main class="container py-lg-5">
+      <div class="p-4 p-md-5 mb-4  rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">Partner with Us</h1>
+          <p class="lead my-3">
+
+            We are one of India’s leading construction companies,offering procurement management services nationwide. We believe in win-win partnerships with our vendor and supplier partners, and building sustainable as well as long-term relationships for value creation in supply chain process. </p>
+          <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Associate with Us</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">True to its philosophy of “Simplify. Create”, Tata Projects constantly focuses on simplifying its processes from time to time and thus creates value for the stakeholders. By utilizing global purchasing and supply management, we have brought immense value</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="https://source.unsplash.com/500x500/?books" class="bd-placeholder-img" width="200" height="250">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">New & Media</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">Find out what is new at TPL and stay updated with news, awards and Press Release.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="https://source.unsplash.com/500x500/?orange" class="bd-placeholder-img" width="200" height="250">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            From the Firehose
+          </h3>
+
+          <article class="blog-post">
+            <h2 class="blog-post-title mb-1"> blog post</h2>
+            <p class="blog-post-meta">January 1, 2023 by <a href="#">Asharam</a></p>
+
+            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
+              typography, lists, tables, images, code, and more are all supported as expected.</p>
+            <hr>
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space
+              and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+              demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h2>Blockquotes</h2>
+            <p>This is an example blockquote in action:</p>
+            <blockquote class="blockquote">
+              <p>Quoted text goes here.</p>
+            </blockquote>
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space
+              and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+              demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h3>Example lists</h3>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other
+              highly repetitive body text used throughout. This is an example unordered list:</p>
+            <ul>
+              <li>First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ul>
+            <p>And this is an ordered list:</p>
+            <ol>
+              <li>First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ol>
+            <p>And this is a definition list:</p>
+            <dl>
+              <dt>HyperText Markup Language (HTML)</dt>
+              <dd>The language used to describe and define the content of a Web page</dd>
+              <dt>Cascading Style Sheets (CSS)</dt>
+              <dd>Used to describe the appearance of Web content</dd>
+              <dt>JavaScript (JS)</dt>
+              <dd>The programming language used to build advanced Web sites and applications</dd>
+            </dl>
+           
+        
+          </article>
+
+          <article class="blog-post">
+            
+            <h3>Example table</h3>
+            <p>And don't forget about tables in these posts:</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Upvotes</th>
+                  <th>Downvotes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alice</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Bob</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Charlie</td>
+                  <td>7</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Totals</td>
+                  <td>21</td>
+                  <td>23</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other
+              highly repetitive body text used throughout.</p>
+          </article>
+
+
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+            <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+          </nav>
+
+        </div>
+
+        <div class="col-md-4 py-lg-5">
+          <div class="position-sticky py-lg-5" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers,
+                content, or something else entirely. Totally up to you.</p>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">March 2021</a></li>
+                <li><a href="#">February 2021</a></li>
+                <li><a href="#">January 2021</a></li>
+                <li><a href="#">December 2020</a></li>
+                <li><a href="#">November 2020</a></li>
+                <li><a href="#">October 2020</a></li>
+                <li><a href="#">September 2020</a></li>
+                <li><a href="#">August 2020</a></li>
+                <li><a href="#">July 2020</a></li>
+                <li><a href="#">June 2020</a></li>
+                <li><a href="#">May 2020</a></li>
+                <li><a href="#">April 2020</a></li>
+              </ol>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      © 2022
+    </footer>
+  </div>
